@@ -7,10 +7,64 @@ namespace Barduino
 {
     public class Beverage
     {
-        public void Drink()
+        public enum BeverageType { Alcoholic, Virgin};
+
+        public void Drink(List<Ingredient> Ingredients, List<string> Instructions, string Name, BeverageType Type)
         {
             
         }
+
+        private List<Ingredient> _ingredients;
+        /// <summary>
+        /// List of ingredients necessary for drinks
+        /// </summary>
+        public List<Ingredient> Ingredients
+        {
+            get { return _ingredients; }
+            set
+            {
+                _ingredients = value;
+            }
+        }
+
+        private List<string> _instructions;
+        /// <summary>
+        /// List of instructions on how to make the drink
+        /// </summary>
+        public List<string> Instructions
+        {
+            get{ return _instructions;}
+            set
+            {
+               _instructions = value;
+            }
+        }
+
+        private string _name;
+        /// <summary>
+        /// Name of the drink
+        /// </summary>
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
+                _name = value;
+            }
+        }
+
+        private BeverageType _type;
+
+        public BeverageType Type
+        {
+            get { return _type; }
+            set
+            {
+                _type = value;
+            }
+        }
+
+       
     }
 
     public class Ingredient
@@ -28,7 +82,7 @@ namespace Barduino
         /// <param name="Type">Soda, Water, Liquor</param>
         /// <param name="Name">Brand and type. e.g: Bacardi- Rum, Malibu- Coconut Rum</param>
         /// <param name="Serving">Amount per serving(Liquids are in ounces)</param>
-        public Ingredient(IngredientType IngType, string BrandName, string Name, int Serving)
+        public Ingredient(IngredientType IngType, string BrandName, string Name, double Serving)
         {
             Type = IngType;
             Brand = BrandName;
@@ -73,12 +127,12 @@ namespace Barduino
             }
         }
 
-        private int _serving;
+        private double _serving;
         /// <summary>
         /// Serving size of ingredient
         /// Liquid: in ounces
         /// </summary>
-        public int Serving
+        public double Serving
         {
             get { return _serving; }
             set
