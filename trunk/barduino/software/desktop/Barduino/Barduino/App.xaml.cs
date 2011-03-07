@@ -12,8 +12,5 @@ namespace Barduino
     /// </summary>
     public partial class App : Application
     {
-
-        Ingredient Rum = new Ingredient(Ingredient.LiquidType.Soda, "CocaCola", "Coke", 8);
-
     }
 }
