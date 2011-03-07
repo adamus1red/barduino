@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Barduino.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Barduino" MinHeight="1024" MinWidth="964" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+        Title="Barduino- Automated Bar Tender" FontSize="16" MinHeight="1024" MinWidth="964" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
     <Grid Background="DimGray">
         <Grid Name="MenuPanel" Margin="0,0,0,1" HorizontalAlignment="Left" Width="328">
             <Grid Height="462" HorizontalAlignment="Left" Width="328" VerticalAlignment="Top">
