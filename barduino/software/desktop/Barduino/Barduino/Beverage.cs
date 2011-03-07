@@ -27,7 +27,7 @@ namespace Barduino
         /// </summary>
         /// <param name="Type">Soda, Water, Liquor</param>
         /// <param name="Name">Brand and type. e.g: Bacardi- Rum, Malibu- Coconut Rum</param>
-        /// <param name="Serving">Amount per serving- In ounces</param>
+        /// <param name="Serving">Amount per serving(Liquids are in ounces)</param>
         public Ingredient(IngredientType IngType, string BrandName, string Name, int Serving)
         {
             Type = IngType;
@@ -74,7 +74,10 @@ namespace Barduino
         }
 
         private int _serving;
-
+        /// <summary>
+        /// Serving size of ingredient
+        /// Liquid: in ounces
+        /// </summary>
         public int Serving
         {
             get { return _serving; }
