@@ -40,7 +40,8 @@ void setup()
 void loop()
 {
  // TODO
- // 1. read data from ethernet
- // 2. parse command (that means we build an API)
- // 3. execute the command
+ // while true
+ //    read data from ethernet
+ //    parse command (that means we build an API)
+ //    execute the command
 }
