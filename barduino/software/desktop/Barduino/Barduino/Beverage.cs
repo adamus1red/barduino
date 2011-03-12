@@ -7,8 +7,15 @@ namespace Barduino
 {
     public class Beverage
     {
-        public enum BeverageType { Alcoholic, Virgin};
+        public enum BeverageType {Alcoholic, Virgin};
 
+        /// <summary>
+        /// Constructor for a beverage
+        /// </summary>
+        /// <param name="Ingredients"></param>
+        /// <param name="Instructions"></param>
+        /// <param name="Name"></param>
+        /// <param name="Type"></param>
         public void Drink(List<Ingredient> Ingredients, List<string> Instructions, string Name, BeverageType Type)
         {
             
@@ -33,7 +40,7 @@ namespace Barduino
         /// </summary>
         public List<string> Instructions
         {
-            get{ return _instructions;}
+            get{ return _instructions; }
             set
             {
                _instructions = value;
@@ -54,7 +61,9 @@ namespace Barduino
         }
 
         private BeverageType _type;
-
+        /// <summary>
+        /// Type of the drink
+        /// </summary>
         public BeverageType Type
         {
             get { return _type; }
@@ -75,7 +84,6 @@ namespace Barduino
         /// </summary>
         public enum IngredientType { Soda, Water, Liquor, Fruit, Other}
 
-
         /// <summary>
         /// Ingredient that makes up a drink. ex: pineapple chunk, cherry, Orange slice,...
         /// </summary>
@@ -89,6 +97,7 @@ namespace Barduino
             this.Name = Name;
             this.Serving = Serving;
         }
+
         private IngredientType _type;
         /// <summary>
         /// Get/Set for Type of liquid
@@ -140,6 +149,5 @@ namespace Barduino
                 _serving = value;
             }
         }
-
     }
 }
