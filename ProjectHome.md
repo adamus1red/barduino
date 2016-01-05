@@ -1,0 +1,1 @@
+Automated drink mixer based on the Arduino development board. This is an educational project for electronics, embedded software, and windows desktop application development.
